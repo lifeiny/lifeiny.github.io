@@ -8,9 +8,9 @@ http://example.com/categories/index.html
 http://example.com/
 http://example.com/tags/POD/
 http://example.com/tags/turbulence/
+http://example.com/tags/dairy/
 http://example.com/tags/numpy/
 http://example.com/tags/python/
-http://example.com/tags/dairy/
 http://example.com/categories/python/
-http://example.com/categories/MATLAB/
 http://example.com/categories/journal/
+http://example.com/categories/MATLAB/
