@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://example.com/2023/09/28/Why-n-1-when-calculating-sample-variance/</loc>
+    
+    <lastmod>2023-09-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://example.com/2023/05/24/%E5%B0%8F%E6%A2%81%E5%BA%84%E6%B2%A1%E6%9C%89%E4%BB%80%E4%B9%88%E6%96%B0%E9%97%BB/</loc>
     
     <lastmod>2023-05-25</lastmod>
@@ -76,7 +85,7 @@
 
   <url>
     <loc>http://example.com/</loc>
-    <lastmod>2023-05-25</lastmod>
+    <lastmod>2023-09-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -84,35 +93,35 @@
   
   <url>
     <loc>http://example.com/tags/POD/</loc>
-    <lastmod>2023-05-25</lastmod>
+    <lastmod>2023-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/turbulence/</loc>
-    <lastmod>2023-05-25</lastmod>
+    <lastmod>2023-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/dairy/</loc>
-    <lastmod>2023-05-25</lastmod>
+    <lastmod>2023-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/numpy/</loc>
-    <lastmod>2023-05-25</lastmod>
+    <lastmod>2023-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/python/</loc>
-    <lastmod>2023-05-25</lastmod>
+    <lastmod>2023-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -121,21 +130,21 @@
   
   <url>
     <loc>http://example.com/categories/python/</loc>
-    <lastmod>2023-05-25</lastmod>
+    <lastmod>2023-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://example.com/categories/journal/</loc>
-    <lastmod>2023-05-25</lastmod>
+    <lastmod>2023-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://example.com/categories/MATLAB/</loc>
-    <lastmod>2023-05-25</lastmod>
+    <lastmod>2023-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
