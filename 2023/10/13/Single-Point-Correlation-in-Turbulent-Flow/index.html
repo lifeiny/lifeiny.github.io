@@ -9,7 +9,7 @@
     
     <title>
         
-            Why (n-1) when calculating sample variance? |
+            Single-Point Correlation in Turbulent Flow |
         
         Li Fei
     </title>
@@ -163,7 +163,7 @@
     <div class="article-content-container">
 
         <div class="article-title">
-            <span class="title-hover-animation">Why (n-1) when calculating sample variance?</span>
+            <span class="title-hover-animation">Single-Point Correlation in Turbulent Flow</span>
         </div>
 
         
@@ -180,8 +180,8 @@
                         <div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fas fa-edit"></i>&nbsp;
-        <span class="pc">2023-09-28 00:08:37</span>
-        <span class="mobile">2023-09-28 00:08</span>
+        <span class="pc">2023-10-13 21:00:07</span>
+        <span class="mobile">2023-10-13 21:00</span>
     </span>
     
         <span class="article-categories article-meta-item">
@@ -211,12 +211,12 @@
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fas fa-file-word"></i>&nbsp;<span>329 Words</span>
+            <i class="fas fa-file-word"></i>&nbsp;<span>1.2k Words</span>
         </span>
     
     
         <span class="article-min2read article-meta-item">
-            <i class="fas fa-clock"></i>&nbsp;<span>2 Mins</span>
+            <i class="fas fa-clock"></i>&nbsp;<span>7 Mins</span>
         </span>
     
     
@@ -228,38 +228,84 @@
         
 
         <div class="article-content markdown-body">
-            <p>Why (n-1) when calculating sample variance?</p>
-<p>Suppose sample mean </p>
-<script type="math/tex; mode=display">
-\overline{X}</script><p>sample variance </p>
-<script type="math/tex; mode=display">
-S^2</script><p>Overall mean</p>
-<script type="math/tex; mode=display">
-\mu</script><p>Overall variance </p>
-<script type="math/tex; mode=display">
-\sigma^2</script><script type="math/tex; mode=display">
-S^2=\frac{1}{n-1}\sum_{i=1}^n{\left( X_i-\overline{X} \right)}^2</script><p>if </p>
-<script type="math/tex; mode=display">
-S^2=\frac{1}{n}\sum_{i=1}^n{\left( X_i-\overline{X} \right)}^2</script><p>Then</p>
-<script type="math/tex; mode=display">
-E\left( S^2 \right) =E\left( \frac{1}{n}\sum_{i=1}^n{\left( X_i-\overline{X} \right) ^2} \right)</script><script type="math/tex; mode=display">
-=E\left( \frac{1}{n}\sum_{i=1}^n{\left[ \left( X_i-\mu \right) -\left( \overline{X}-\mu \right) \right] ^2} \right)</script><script type="math/tex; mode=display">
-=E\left( \frac{1}{n}\sum_{i=1}^n{\left[ \left( X_i-\mu \right) ^2-2\left( X_i-\mu \right) \left( \overline{X}-\mu \right) +\left( \overline{X}-\mu \right) ^2 \right]} \right) 
-\\</script><script type="math/tex; mode=display">
-=E\left( \frac{1}{n}\sum_{i=1}^n{\left( X_i-\mu \right) ^2-\frac{2}{n}\sum_{i=1}^n{\left( X_i-\mu \right) \left( \overline{X}-\mu \right) +\frac{1}{n}\sum_{i=1}^n{\left( \overline{X}-\mu \right) ^2}}} \right) 
-\\</script><script type="math/tex; mode=display">
-Note：{\left( \frac{1}{n}\sum_{i=1}^n{\left( X_i-\mu \right) ^2}=\frac{1}{n}\sum_{i=1}^n{X_i-\mu =\overline{X}-\mu =\frac{1}{n}\sum_{i=1}^n{\left( \overline{X}-\mu \right)}} \right) }
-\\</script><script type="math/tex; mode=display">
-=E\left( \frac{1}{n}\sum_{i=1}^n{\left( X_i-\mu \right) ^2}-\frac{2}{n}\sum_{i=1}^n{\left( \overline{X}-\mu \right) ^2}+\frac{1}{n}\sum_{i=1}^n{\left( \overline{X}-\mu \right) ^2} \right) 
-\\</script><script type="math/tex; mode=display">
-=E\left( \frac{1}{n}\sum_{i=1}^n{\left( X_i-\mu \right) ^2}-\frac{1}{n}\sum_{i=1}^n{\left( \overline{X}-\mu \right) ^2} \right) 
-\\</script><script type="math/tex; mode=display">
-=E\left( \frac{1}{n}\sum_{i=1}^n{\left( X_i-\mu \right) ^2} \right) -E\left( \frac{1}{n}\sum_{i=1}^n{\left( \overline{X}-\mu \right) ^2} \right) 
-\\</script><script type="math/tex; mode=display">
-=\sigma ^2-E\left( \frac{1}{n}\sum_{i=1}^n{\left( \overline{X}-\mu \right) ^2} \right) 
-\\
-<\sigma ^2</script><p>posted 2023/09/28</p>
-<p>modified 2023/09/28</p>
+            <p>Calculate Single-Point Correlation in Turbulent Flow<br>User<br>The single-point correlation is a measure of the self-similarity of a turbulent flow at a given point, and it can be used to understand the turbulent structures, such as eddies. In fluid mechanics, correlations provide statistical descriptions of turbulence.</p>
+<h3 id="1-Basic-Concept"><a href="#1-Basic-Concept" class="headerlink" title="1. Basic Concept"></a>1. Basic Concept</h3><p>For a scalar field  $\phi(t, \mathbf{x})$, the auto-correlation  $R_{\phi\phi}$ at a point $\mathbf{x}$ is defined as:$R_{\phi\phi}(\tau, \mathbf{r}) = \langle \phi(t, \mathbf{x}) \phi(t + \tau, \mathbf{x} + \mathbf{r}) \rangle$<br>where $\langle \cdot \rangle$ denotes the ensemble average, $\tau$ is the time delay, and $\mathbf{r}$ is the spatial separation.</p>
+<h3 id="2-Procedure-to-Calculate-Single-Point-Correlation"><a href="#2-Procedure-to-Calculate-Single-Point-Correlation" class="headerlink" title="2. Procedure to Calculate Single-Point Correlation"></a>2. Procedure to Calculate Single-Point Correlation</h3><ol>
+<li><p><strong>Data Collection</strong>: Acquire a time series of the quantity of interest (e.g., velocity) at a particular spatial point in the flow. This could be done using a hot-wire anemometer, laser Doppler velocimetry, or any other appropriate measurement technique for turbulent flows.</p>
+</li>
+<li><p><strong>Time Averaging</strong>: Remove any mean component by taking an average over the time series and then subtracting this average from the entire series.</p>
+</li>
+<li><p><strong>Computing the Correlation</strong>: For each time delay $\tau$, multiply the value of the signal at time $t$ with that at $t + \tau$ and average this over all $t$. This gives you the correlation at delay $\tau$.</p>
+</li>
+<li><p><strong>Normalization</strong>: Divide the correlation function by its value at $\tau = 0$ to obtain a normalized auto-correlation function that varies between 1 (at $\tau = 0$ ) and 0 (as  $\tau$  becomes very large).</p>
+</li>
+</ol>
+<h3 id="3-Extracting-Eddy-Size"><a href="#3-Extracting-Eddy-Size" class="headerlink" title="3. Extracting Eddy Size"></a>3. Extracting Eddy Size</h3><ol>
+<li><p><strong>Identify Zero Crossing</strong>: The point where the auto-correlation drops to zero for the first time represents a characteristic time scale $\tau_0$ of the turbulent eddies. </p>
+</li>
+<li><p><strong>Convert Time to Length Scale</strong>: If you’re analyzing a velocity signal, the characteristic length scale (or eddy size) $ L$ can be approximated using the Taylor’s hypothesis:<br>[ L = U \tau_0 ]<br>where $ U$ is the mean velocity of the flow.</p>
+</li>
+</ol>
+<h3 id="4-Notes"><a href="#4-Notes" class="headerlink" title="4. Notes"></a>4. Notes</h3><ul>
+<li>While single-point correlations give insights into the scale of the eddies, they don’t provide full spatial information. For more spatially-resolved insights, two-point correlations or spatial spectra might be needed.</li>
+<li>In practical applications, turbulence is often non-stationary. This means that the statistical properties can vary over time, which can complicate the interpretation of single-point correlations.</li>
+</ul>
+<p>This procedure provides a basic understanding of how one might compute single-point correlations in turbulent flows and then use them to deduce information about eddy sizes. Actual implementations might have additional nuances based on the specific details of the flow and the experimental setup.<br>User<br>how to get the signals at each time delay?<br>ChatGPT<br>When you have a time series of data points (for example, velocity measurements taken at regular time intervals), the “signal” at each time delay $\tau$ is obtained by pairing data points that are $ \tau$ apart in the time series. Here’s how you would obtain these signals:</p>
+<h3 id="Procedure"><a href="#Procedure" class="headerlink" title="Procedure:"></a>Procedure:</h3><ol>
+<li><p><strong>Choose the Time Delay $\tau$</strong>: Start with $\tau = 0$, then $\tau = \Delta t$ (where $\Delta t$ is your sampling time interval), then $\tau = 2\Delta t$, and so on, up to a maximum value that makes sense for your analysis.</p>
+</li>
+<li><p><strong>Pairing Data Points</strong>: For each $\tau$, pair each data point $\phi(t)$ with the data point $\phi(t+\tau)$.</p>
+<ul>
+<li>For $\tau = 0$: Every data point is paired with itself.</li>
+<li>For $\tau =\Delta t$: The first data point is paired with the second, the second with the third, and so on.</li>
+<li>For $\tau = 2\Delta t$: The first data point is paired with the third, the second with the fourth, and so on.</li>
+</ul>
+</li>
+<li><p><strong>Compute the Product</strong>: For each pair, compute the product $\phi(t) \times \phi(t+\tau)$.</p>
+</li>
+<li><p><strong>Average the Product</strong>: Compute the average of these products over all data points to get the correlation for that $\tau$. This is essentially:<br>$R(\tau) = \frac{1}{N-\tau/\Delta t} \sum_{t=1}^{N-\tau/\Delta t} \phi(t) \phi(t+\tau)$<br>Where $N$ is the total number of data points in your time series.</p>
+</li>
+<li><p><strong>Repeat for All $\tau$</strong>: Repeat the process for all desired values of $\tau$ to obtain the correlation function.</p>
+</li>
+</ol>
+<h3 id="Notes"><a href="#Notes" class="headerlink" title="Notes:"></a>Notes:</h3><ul>
+<li><p>The maximum $\tau$ you consider should be less than the total length of your time series. Typically, you’ll choose a maximum $\tau$ that is less than this to ensure a sufficient number of pairs at each $\tau$ for a statistically significant average.</p>
+</li>
+<li><p>As $\tau$ increases, the number of data pairs available decreases. This is because, for a given $\tau$, the last $\tau/\Delta t$ data points of the series don’t have a partner $\tau$ apart. As a result, the statistical reliability of the correlation may decrease for large $\tau$.</p>
+</li>
+<li><p>In practice, you would use software (e.g., MATLAB, Python’s NumPy) to compute these correlations rather than doing it manually.</p>
+</li>
+</ul>
+<p>By following this procedure, you will have computed the auto-correlation of the time series at various time delays $\tau$, providing insights into the temporal structure of your turbulent signal.<br>User<br>When the first data point is paired with the second , the second with the third, and so on, how to deal with the lat data point and the first data point in another group since there is no additional data point to be paired with?<br>ChatGPT<br>Your understanding is correct. When you’re pairing data points separated by a time delay $\tau$, as $\tau$ increases, there will be fewer pairs to consider because the end of the dataset is reached. Here’s how you handle this:</p>
+<h3 id="Handling-the-End-of-the-Dataset"><a href="#Handling-the-End-of-the-Dataset" class="headerlink" title="Handling the End of the Dataset:"></a>Handling the End of the Dataset:</h3><ol>
+<li><p><strong>For $\tau = \Delta t$</strong>:</p>
+<ul>
+<li>The first data point pairs with the second, the second with the third, and so on.</li>
+<li>The last data point (let’s call it the $N^{th}$ data point) will <strong>not</strong> have a pair because there’s no $N+1$ data point.</li>
+</ul>
+</li>
+<li><p><strong>For $\tau = 2\Delta t$</strong>:</p>
+<ul>
+<li>The first data point pairs with the third, the second with the fourth, and so on.</li>
+<li>The $N-1$ data point will pair with the $N$ data point, but then both the $N-1$ and $N$ data points will not have pairs for subsequent larger time delays.</li>
+</ul>
+</li>
+<li><p><strong>General Rule</strong>:</p>
+<ul>
+<li>For any given $\tau$, the last $\tau/\Delta t$ data points will not have a partner $\tau$ apart. These points are not included in the computation for that $\tau$.</li>
+</ul>
+</li>
+</ol>
+<h3 id="Important-Notes"><a href="#Important-Notes" class="headerlink" title="Important Notes:"></a>Important Notes:</h3><ul>
+<li><p>As you increase $\tau$, the number of pairs available for computing the correlation decreases. This is why the statistical reliability of the correlation may reduce for large $\tau$.</p>
+</li>
+<li><p>The above explanation assumes that you’re not using a periodic boundary condition or any other method to artificially create pairs. For typical correlation computations of a time series in turbulence studies, you don’t wrap around to the beginning of the dataset.</p>
+</li>
+<li><p>The normalization or averaging process should account for the reduced number of pairs. When computing the average product for each $\tau$, you’ll divide by the actual number of pairs for that $\tau$ rather than always dividing by $N$.</p>
+</li>
+</ul>
+<p>By taking care to properly pair data and ensuring that the normalization/averaging process accounts for the varying number of pairs at each $\tau$, you can correctly compute the auto-correlation of your dataset.</p>
+<p>2023/10/13</p>
 
         </div>
 
@@ -267,11 +313,11 @@ Note：{\left( \frac{1}{n}\sum_{i=1}^n{\left( X_i-\mu \right) ^2}=\frac{1}{n}\su
             <div class="post-copyright-info">
                 <div class="article-copyright-info-container">
     <ul>
-        <li>Post title：Why (n-1) when calculating sample variance?</li>
+        <li>Post title：Single-Point Correlation in Turbulent Flow</li>
         <li>Post author：Li Fei</li>
-        <li>Create time：2023-09-28 00:08:37</li>
+        <li>Create time：2023-10-13 21:00:07</li>
         <li>
-            Post link：https://lifeiny.github.io/2023/09/28/Why-n-1-when-calculating-sample-variance/
+            Post link：https://lifeiny.github.io/2023/10/13/Single-Point-Correlation-in-Turbulent-Flow/
         </li>
         <li>
             Copyright Notice：All articles in this blog are licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> unless stating additionally.
@@ -295,29 +341,14 @@ Note：{\left( \frac{1}{n}\sum_{i=1}^n{\left( X_i-\mu \right) ^2}=\frac{1}{n}\su
         
             <div class="article-nav">
                 
-                    <div class="article-prev">
-                        <a class="prev"
-                           rel="prev"
-                           href="/2023/10/13/Single-Point-Correlation-in-Turbulent-Flow/"
-                        >
-                            <span class="left arrow-icon flex-center">
-                              <i class="fas fa-chevron-left"></i>
-                            </span>
-                            <span class="title flex-center">
-                                <span class="post-nav-title-item">Single-Point Correlation in Turbulent Flow</span>
-                                <span class="post-nav-item">Prev posts</span>
-                            </span>
-                        </a>
-                    </div>
-                
                 
                     <div class="article-next">
                         <a class="next"
                            rel="next"
-                           href="/2023/05/24/%E5%B0%8F%E6%A2%81%E5%BA%84%E6%B2%A1%E6%9C%89%E4%BB%80%E4%B9%88%E6%96%B0%E9%97%BB/"
+                           href="/2023/09/28/Why-n-1-when-calculating-sample-variance/"
                         >
                             <span class="title flex-center">
-                                <span class="post-nav-title-item">小梁庄没有什么新闻</span>
+                                <span class="post-nav-title-item">Why (n-1) when calculating sample variance?</span>
                                 <span class="post-nav-item">Next posts</span>
                             </span>
                             <span class="right arrow-icon flex-center">
@@ -511,7 +542,7 @@ Note：{\left( \frac{1}{n}\sum_{i=1}^n{\left( X_i-\mu \right) ^2}=\frac{1}{n}\su
         <aside class="page-aside">
             <div class="post-toc-wrap">
     <div class="post-toc">
-        
+        <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Basic-Concept"><span class="nav-number">1.</span> <span class="nav-text">1. Basic Concept</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Procedure-to-Calculate-Single-Point-Correlation"><span class="nav-number">2.</span> <span class="nav-text">2. Procedure to Calculate Single-Point Correlation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-Extracting-Eddy-Size"><span class="nav-number">3.</span> <span class="nav-text">3. Extracting Eddy Size</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-Notes"><span class="nav-number">4.</span> <span class="nav-text">4. Notes</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Procedure"><span class="nav-number">5.</span> <span class="nav-text">Procedure:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Notes"><span class="nav-number">6.</span> <span class="nav-text">Notes:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Handling-the-End-of-the-Dataset"><span class="nav-number">7.</span> <span class="nav-text">Handling the End of the Dataset:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Important-Notes"><span class="nav-number">8.</span> <span class="nav-text">Important Notes:</span></a></li></ol>
     </div>
 </div>
         </aside>
