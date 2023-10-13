@@ -211,7 +211,7 @@
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fas fa-file-word"></i>&nbsp;<span>381 Words</span>
+            <i class="fas fa-file-word"></i>&nbsp;<span>330 Words</span>
         </span>
     
     
@@ -229,10 +229,37 @@
 
         <div class="article-content markdown-body">
             <p>Why (n-1) when calculating sample variance?</p>
-<p>Suppose sample mean<br>$$<br>\overline{X}<br>$$<br>sample variance<br>$$<br>S^2<br>$$<br>Overall mean<br>$$<br>\mu<br>$$<br>Overall variance<br>$$<br>\sigma^2<br>$$</p>
-<p>$$<br>S^2&#x3D;\frac{1}{n-1}\sum_{i&#x3D;1}^n{\left( X_i-\overline{X} \right)}^2<br>$$</p>
-<p>if<br>$$<br>S^2&#x3D;\frac{1}{n}\sum_{i&#x3D;1}^n{\left( X_i-\overline{X} \right)}^2<br>$$<br>Then<br>$$<br>E\left( S^2 \right) &#x3D;E\left( \frac{1}{n}\sum_{i&#x3D;1}^n{\left( X_i-\overline{X} \right) ^2} \right)<br>\<br>&#x3D;E\left( \frac{1}{n}\sum_{i&#x3D;1}^n{\left[ \left( X_i-\mu \right) -\left( \overline{X}-\mu \right) \right] ^2} \right)<br>\<br>&#x3D;E\left( \frac{1}{n}\sum_{i&#x3D;1}^n{\left[ \left( X_i-\mu \right) ^2-2\left( X_i-\mu \right) \left( \overline{X}-\mu \right) +\left( \overline{X}-\mu \right) ^2 \right]} \right)<br>\<br>&#x3D;E\left( \frac{1}{n}\sum_{i&#x3D;1}^n{\left( X_i-\mu \right) ^2-\frac{2}{n}\sum_{i&#x3D;1}^n{\left( X_i-\mu \right) \left( \overline{X}-\mu \right) +\frac{1}{n}\sum_{i&#x3D;1}^n{\left( \overline{X}-\mu \right) ^2}}} \right)<br>\<br>{\color{red} \left( \frac{1}{n}\sum_{i&#x3D;1}^n{\left( X_i-\mu \right) ^2}&#x3D;\frac{1}{n}\sum_{i&#x3D;1}^n{X_i-\mu &#x3D;\overline{X}-\mu &#x3D;\frac{1}{n}\sum_{i&#x3D;1}^n{\left( \overline{X}-\mu \right)}} \right) }<br>\<br>&#x3D;E\left( \frac{1}{n}\sum_{i&#x3D;1}^n{\left( X_i-\mu \right) ^2}-\frac{2}{n}\sum_{i&#x3D;1}^n{\left( \overline{X}-\mu \right) ^2}+\frac{1}{n}\sum_{i&#x3D;1}^n{\left( \overline{X}-\mu \right) ^2} \right)<br>\<br>&#x3D;E\left( \frac{1}{n}\sum_{i&#x3D;1}^n{\left( X_i-\mu \right) ^2}-\frac{1}{n}\sum_{i&#x3D;1}^n{\left( \overline{X}-\mu \right) ^2} \right)<br>\<br>&#x3D;E\left( \frac{1}{n}\sum_{i&#x3D;1}^n{\left( X_i-\mu \right) ^2} \right) -E\left( \frac{1}{n}\sum_{i&#x3D;1}^n{\left( \overline{X}-\mu \right) ^2} \right)<br>\<br>&#x3D;\sigma ^2-E\left( \frac{1}{n}\sum_{i&#x3D;1}^n{\left( \overline{X}-\mu \right) ^2} \right)<br>\<br>&lt;\sigma ^2<br>$$<br>posted 2023&#x2F;09&#x2F;28</p>
-<p>modified 2023&#x2F;09&#x2F;28</p>
+<p>Suppose sample mean </p>
+<script type="math/tex; mode=display">
+\overline{X}</script><p>sample variance </p>
+<script type="math/tex; mode=display">
+S^2</script><p>Overall mean</p>
+<script type="math/tex; mode=display">
+\mu</script><p>Overall variance </p>
+<script type="math/tex; mode=display">
+\sigma^2</script><script type="math/tex; mode=display">
+S^2=\frac{1}{n-1}\sum_{i=1}^n{\left( X_i-\overline{X} \right)}^2</script><p>if </p>
+<script type="math/tex; mode=display">
+S^2=\frac{1}{n}\sum_{i=1}^n{\left( X_i-\overline{X} \right)}^2</script><p>Then</p>
+<script type="math/tex; mode=display">
+E\left( S^2 \right) =E\left( \frac{1}{n}\sum_{i=1}^n{\left( X_i-\overline{X} \right) ^2} \right)</script><script type="math/tex; mode=display">
+=E\left( \frac{1}{n}\sum_{i=1}^n{\left[ \left( X_i-\mu \right) -\left( \overline{X}-\mu \right) \right] ^2} \right)</script><script type="math/tex; mode=display">
+=E\left( \frac{1}{n}\sum_{i=1}^n{\left[ \left( X_i-\mu \right) ^2-2\left( X_i-\mu \right) \left( \overline{X}-\mu \right) +\left( \overline{X}-\mu \right) ^2 \right]} \right) 
+\\</script><script type="math/tex; mode=display">
+=E\left( \frac{1}{n}\sum_{i=1}^n{\left( X_i-\mu \right) ^2-\frac{2}{n}\sum_{i=1}^n{\left( X_i-\mu \right) \left( \overline{X}-\mu \right) +\frac{1}{n}\sum_{i=1}^n{\left( \overline{X}-\mu \right) ^2}}} \right) 
+\\</script><script type="math/tex; mode=display">
+{\color{red} \left( \frac{1}{n}\sum_{i=1}^n{\left( X_i-\mu \right) ^2}=\frac{1}{n}\sum_{i=1}^n{X_i-\mu =\overline{X}-\mu =\frac{1}{n}\sum_{i=1}^n{\left( \overline{X}-\mu \right)}} \right) }
+\\</script><script type="math/tex; mode=display">
+=E\left( \frac{1}{n}\sum_{i=1}^n{\left( X_i-\mu \right) ^2}-\frac{2}{n}\sum_{i=1}^n{\left( \overline{X}-\mu \right) ^2}+\frac{1}{n}\sum_{i=1}^n{\left( \overline{X}-\mu \right) ^2} \right) 
+\\</script><script type="math/tex; mode=display">
+=E\left( \frac{1}{n}\sum_{i=1}^n{\left( X_i-\mu \right) ^2}-\frac{1}{n}\sum_{i=1}^n{\left( \overline{X}-\mu \right) ^2} \right) 
+\\</script><script type="math/tex; mode=display">
+=E\left( \frac{1}{n}\sum_{i=1}^n{\left( X_i-\mu \right) ^2} \right) -E\left( \frac{1}{n}\sum_{i=1}^n{\left( \overline{X}-\mu \right) ^2} \right) 
+\\</script><script type="math/tex; mode=display">
+=\sigma ^2-E\left( \frac{1}{n}\sum_{i=1}^n{\left( \overline{X}-\mu \right) ^2} \right) 
+\\
+<\sigma ^2</script><p>posted 2023/09/28</p>
+<p>modified 2023/09/28</p>
 
         </div>
 
