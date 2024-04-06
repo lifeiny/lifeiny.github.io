@@ -69,3 +69,16 @@ showBuyCoffee: true
 payImage: //gw.alipayobjects.com/zos/k/vb/1.png
 assetUrl: //tw93.fun/images/
 defaultImage: data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
+
+#Latex
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts: # Rouge Options: https://github.com/jneen/rouge#full-options
+    css_class: highlight
+    # default_lang: console
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
