@@ -1,6 +1,6 @@
 ---
 layout: post
-title: sample variance calculation
+title: Sample variance calculation
 date: 2023-09-28 00:08:37
 summary: When calculating the sample variance, need to use (n-1), and the reason is shown here.
 categories:  Statistics
@@ -8,22 +8,10 @@ categories:  Statistics
 
 Why (n-1) when calculating sample variance?
 
-Suppose sample mean 
-$$
-\overline{X}
-$$
-sample variance 
-$$
-S^2
-$$
-Overall mean
-$$
-\mu
-$$
-Overall variance 
-$$
-\sigma^2
-$$
+Suppose sample mean $\overline{X}$
+sample variance $S^2$
+Overall mean $\mu$
+Overall variance $\sigma^2$
 
 $$
 S^2=\frac{1}{n-1}\sum_{i=1}^n{\left( X_i-\overline{X} \right)}^2
