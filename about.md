@@ -7,10 +7,10 @@ hideHomeActive: true
 
 ## 关于我
 
-- 我是
-- 喜欢
-- 喜欢
-- 在 
+- 随便记点什么吧，有一些平时用到的资料（好多是问ChatGPT的），也有瞎写的。
+- 感谢[Tw3](https://github.com/tw93)的主题和模版
+
+
 ## 关注我
 
 - [Github](https://github.com/{{site.github}})
