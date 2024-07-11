@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 琅琊榜2观后
-date: 2024-04-06 12:00:00
+date: 2024-07-10 12:00:00
 summary: 2024年看了一部7年前的电视剧
 categories: Others
 ---
