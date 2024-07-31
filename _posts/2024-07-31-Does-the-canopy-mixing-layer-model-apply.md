@@ -3,15 +3,11 @@ layout: post
 title: Does the canopy mixing layer model apply to highly
 flexible aquatic vegetation? Insights from numerical
 modelling
-date: 2024-07-10 12:00:00
+date: 2024-07-31 12:00:00
 summary: mixing layer
 categories: turbulence
 
 ---
-
-Author: Timothy I. Marjoribanks1,2 • Richard J. Hardy2 • Stuart N. Lane3 • Daniel R. Parsons4 
-
-Year: 2017 
 
 **Abstract**
 
@@ -19,7 +15,7 @@ Flow through and above aquatic vegetation canopies is commonly described using a
 
 #### Canopy mixing layer model
 
-<img src="https://cdn.jsdelivr.net/gh/lifeiny/imageField/blog/20240731/F1_canopy_flow.jpg" width="800" />
+<img src="https://cdn.jsdelivr.net/gh/lifeiny/imageField/blog/20240731/F1_canopy_flow.png" width="800" />
 
 The log-law zone above the canopy is unaffected by the additional vegetative drag and therefore the velocity follows the typical logarithmic boundary layer profile [^1]
 
