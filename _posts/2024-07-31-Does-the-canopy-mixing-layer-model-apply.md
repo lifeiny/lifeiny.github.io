@@ -1,13 +1,16 @@
 ---
 layout: post
-title: Does the canopy mixing layer model apply to highly
-flexible aquatic vegetation. Insights from numerical
-modelling
+title: Does the canopy mixing layer model apply to highly flexible aquatic vegetation? Insights from numerical modelling
 date: 2024-07-31 12:00:00
 summary: mixing layer
-categories: turbulence
+categories: Turbulence
+
 
 ---
+
+Author: Timothy I. Marjoribanks1,2 • Richard J. Hardy2 • Stuart N. Lane3 • Daniel R. Parsons4  
+
+Year: 2017
 
 **Abstract**
 
