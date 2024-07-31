@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Does the canopy mixing layer model apply to highly
-flexible aquatic vegetation? Insights from numerical
+flexible aquatic vegetation. Insights from numerical
 modelling
 date: 2024-07-31 12:00:00
 summary: mixing layer
