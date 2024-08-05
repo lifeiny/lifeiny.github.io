@@ -16,4 +16,4 @@ hideHomeActive: true
 - [Github](https://github.com/{{site.github}})
 - [Twitter](https://twitter.com/{{site.twitter}})
 - [知乎](https://www.zhihu.com/people/{{site.zhihu}})
-- [V2EX](https://www.v2ex.com/member/{{site.v2ex}})
+- [微博](https://weibo.com/u/{{site.weibo}})
